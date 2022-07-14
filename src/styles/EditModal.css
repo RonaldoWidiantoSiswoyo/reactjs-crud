@@ -1,0 +1,43 @@
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal-box {
+  width: 40%;
+  height: 10rem;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 35px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation-name: show;
+  animation-duration: 0.8s;
+}
+.modal-box h3 {
+  color: #2da4f8;
+}
+.modal-box .input {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.modal-box input {
+  width: 80%;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+@keyframes show {
+  from {
+    top: -100px;
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
